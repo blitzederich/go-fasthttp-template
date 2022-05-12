@@ -1,0 +1,12 @@
+{
+    "server_addr": ":3000",
+    "jwt_secret": "jwt_secret",
+    "postgres": {
+        "conn_str": "postgres://messenger:password@localhost:5432/messenger"
+    },
+    "redis": {
+        "addr": "localhost:6379",
+        "password": "password",
+        "db": 0
+    }
+}

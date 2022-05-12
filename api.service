@@ -1,0 +1,17 @@
+[Unit]
+  Description=API GOLANG
+
+[Service]
+  WorkingDirectory=/home/user/path/go-fasthttp-template
+  ExecStart=/home/user/path/go-fasthttp-template/bin/api
+
+  Type=idle
+  KillMode=process
+
+  SyslogIdentifier=api
+  SyslogFacility=daemon
+
+  Restart=on-failure
+
+[Install]
+  WantedBy=multiuser.target
